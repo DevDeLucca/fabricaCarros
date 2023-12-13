@@ -6,7 +6,21 @@ Factory vehicle, type of Manufacturer, model, Engine, Color and Year, etc..
 At first we will use the MVC architecture, as it is an architecture that meets design standards aiming at CLEAN CODE
 good practices.
 ----------------------------------------------------------------------------------------------------------
-
+# Structure Project
+````
+projeto-mvc
+    /src
+        /main
+            /java
+                /modelo
+                    - Tarefa.java
+                /vista
+                    - TarefaView.java
+                /controlador
+                    - TarefaController.java
+                - Main.java
+````
+----------------------------------------------------------------------------------------------
 # Project created with technologies
 * Java version 17 https://docs.oracle.com/en/java/
 * SpringBoot https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
