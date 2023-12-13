@@ -1,6 +1,6 @@
-package controller;
+package model;
 
-public class TipoDeMotor {
+public class ModelTipoDeMotor {
     private String eletrico;
     private String autoMotor;
 }
