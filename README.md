@@ -1,6 +1,6 @@
 # Car Factory
 This project implements a car factory. Consider the following information for all vehicles created by the 
-Factory vehicle, type of Manufacturer, Model, Engine, Color and Year.
+Factory vehicle, type of Manufacturer, model, Engine, Color and Year.
 ----------------------------------------------------------------------------------------------------------
 
 # Project created with technologies
