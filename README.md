@@ -10,4 +10,6 @@ good practices.
 # Project created with technologies
 * Java version 17 https://docs.oracle.com/en/java/
 * SpringBoot https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
-* Banco de dados SQL Server https://learn.microsoft.com/pt-br/sql/sql-server/?view=sql-server-ver16
+* MVC design pattern https://coodesh.com/blog/dicionario/o-que-e-arquitetura-mvc/
+* SQL Server Database https://learn.microsoft.com/pt-br/sql/sql-server/?view=sql-server-ver16
+
