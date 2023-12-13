@@ -2,7 +2,7 @@
 This project implements a car factory. Consider the following information for all vehicles created by the 
 Factory vehicle, type of Manufacturer, model, Engine, Color and Year, etc..
 
-## Architectural standards and good programming practices to follow
+# Architectural standards and good programming practices to follow
 At first we will use the MVC architecture, as it is an architecture that meets design standards aiming at CLEAN CODE
 good practices.
 ----------------------------------------------------------------------------------------------------------
