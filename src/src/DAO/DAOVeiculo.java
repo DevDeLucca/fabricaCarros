@@ -1,4 +1,4 @@
-package model.DAO;
+package DAO;
 
 public class DAOVeiculo {
 }
