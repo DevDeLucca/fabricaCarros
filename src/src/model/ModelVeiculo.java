@@ -6,9 +6,8 @@ public class ModelVeiculo {
     private ModelId modelId;
     private ModelTipoDeMotor modelTipoDeMotor;
     private ModelCor modelCor;
-    private ModelModelo modelModelo;
-    private ModelFabricante modelFabricante;
-    private ModelMarca modelMarca;
+    private ModelModeloCarro modelModeloCarro;
+    private ModelFabricanteCarro modelFabricanteCarro;
     private ModelAno modelAno;
     private ModelKm modelKm;
 

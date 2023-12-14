@@ -1,4 +1,9 @@
 package controller;
 
-public class ControllerVeiculo {
+import model.ModelTipoDeVeiculo;
+
+
+public class ControllerVeiculo extends ModelTipoDeVeiculo {
+
+
 }
