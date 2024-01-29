@@ -1,4 +1,8 @@
 
-0
-java:S1220""Move this file to a named package.
-E	java:S106"+Replace this use of System.out by a logger.(›Κ­όÿÿÿÿ
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òιόÿÿÿÿ8γ–—„Υ1
+g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òιόÿÿÿÿ8δ–—„Υ1
+
+java:S1598"{This file "Main.java" should be located in "Projeto" directory, not in "C:\Users\corne\IdeaProjects\fabricaCarros\src\src".(α‹λλ8ζ–—„Υ1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(α‹λλ8ι–—„Υ1
+a
+java:S2147"DCombine this catch with the one at line 14, which has the same body.(ύΰΡΞ8——„Υ1
