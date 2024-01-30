@@ -4,12 +4,13 @@ import java.util.Objects;
 
 public class ModelClientePF extends ModelCliente {
 
+    /*variaveis e contantes da classe*/
     private String cpf;
     public ModelClientePF(String nome, String cpf) {
         super(nome);
         this.cpf = cpf;
     }
-
+    /*São os metodos da instancia*/
     public String getCpf() {
         return cpf;
     }

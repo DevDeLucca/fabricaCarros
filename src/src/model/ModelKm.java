@@ -6,6 +6,12 @@ public class ModelKm {
     private String seminovo;
     private String usado;
 
+    public ModelKm(String novo, String seminovo, String usado) {
+        this.novo = novo;
+        this.seminovo = seminovo;
+        this.usado = usado;
+    }
+
     public String getNovo() {
         return novo;
     }
@@ -29,4 +35,6 @@ public class ModelKm {
     public void setUsado(String usado) {
         this.usado = usado;
     }
+
+
 }

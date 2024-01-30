@@ -15,8 +15,6 @@ Y
 )src/src/repository/RepositoryVeiculo.java,5\7\57b59f648f13d79d9db183dd47cc702db2448b3f
 M
 src/src/view/ViewVeiculo.java,a\f\aff770ae0a808a794560d92e7d407b7cb2ae1896
-U
-%src/src/model/ModelTipoDeVeiculo.java,5\e\5ea511520956410d29d1113a1467e77cc247875e
 W
 'src/src/model/ModelFabricanteCarro.java,b\c\bc2bdd3fb0236ff85f5d2c94af4ee0f1b0c63942
 J
@@ -31,3 +29,5 @@ Q
 !src/src/model/ModelClientePJ.java,0\c\0cd5bd8c4197eb2c24dd6821555a859f955b668d
 L
 src/src/view/ViewClient.java,b\c\bc7ace8b40245261882bfd4b47f3d2fde452d3e2
+L
+src/src/model/CMVeiculo.java,0\8\083fb7483497c98f7a5394cf333433e34c506831

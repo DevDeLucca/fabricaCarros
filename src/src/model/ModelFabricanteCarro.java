@@ -2,12 +2,24 @@ package model;
 
 public class ModelFabricanteCarro {
 
-    private Toyota toyota;
+
+    /*variaveis e contantes da classe*/
+    private String toyota;
     private String volksvagem;
     private String hyundai;
     private String ford;
     private String honda;
     private String chevrolet;
+
+    public ModelFabricanteCarro(String toyota, String volksvagem, String hyundai, String ford, String honda,
+                                String chevrolet) {
+        this.toyota = toyota;
+        this.volksvagem = volksvagem;
+        this.hyundai = hyundai;
+        this.ford = ford;
+        this.honda = honda;
+        this.chevrolet = chevrolet;
+    }
 
     public String getToyota() {
         return toyota;

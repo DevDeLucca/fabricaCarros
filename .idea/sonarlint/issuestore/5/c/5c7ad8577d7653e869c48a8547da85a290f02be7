@@ -1,9 +1,7 @@
 
 {
-java:S4144"YUpdate this method so that its implementation is not identical to "getSedans" on line 13.(î„Ø‰şÿÿÿÿ8ßâí†Ô1
-p
-java:S1450"SRemove the "suvs" field and declare it as a local variable in the relevant methods.(àØ¯8àâí†Ô1
+java:S4144"YUpdate this method so that its implementation is not identical to "getSedans" on line 19.(î„Ø‰şÿÿÿÿ8ßâí†Ô1
 f
-java:S4275"DRefactor this getter so that it actually refers to the field "suvs".(î„Ø‰şÿÿÿÿ8æâí†Ô1
+java:S4275"DRefactor this getter so that it actually refers to the field "suvs".(î„Ø‰şÿÿÿÿ8æâí†Ô1
 E
 java:S1068"(Remove this unused "suvs" private field.(àØ¯8éâí†Ô1
