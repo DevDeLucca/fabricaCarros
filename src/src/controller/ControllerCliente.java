@@ -1,12 +1,12 @@
 package controller;
 
 import model.ModelClientePF;
-import view.Client;
+import view.ViewClient;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ControllerCliente<T extends Client> {
+public class ControllerCliente<T extends ViewClient> {
 
     private List<T> clients;
 
@@ -51,11 +51,20 @@ public class ControllerCliente<T extends Client> {
     }
 
 
-    private boolean verificaPadrao(T cliente) {
+    public boolean verificaPadrao(T cliente) {
         boolean retorno = false;
 
-        if (cliente instanceof ModelClientePF) {
-            if ((ModelClientePF) cliente)
+        if(cliente instanceof ModelClientePF) {
+            if (((ModelClientePF) cliente).getCpf().matches("\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d")
+                    || ((ModelClientePF).getCpf().matches("\\d\\d\\d.\\d\\d\\d.\\d\\d\\d-\\d\\d"))
+                retorno = true;
+        } else if (cliente instanceof ClientePJ) {
+            if (((ClientePJ) cliente).getCnpj().matches("\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d")
+                    || ((ClientePJ) cliente).getCnpj().matches("\\d\\d.\\d\\d\\d.\\d\\d\\d/\\d\\d\\d\\d-\\d\\d"))
+                retorno = true;
         }
+
+        return retorno;
     }
+
 }

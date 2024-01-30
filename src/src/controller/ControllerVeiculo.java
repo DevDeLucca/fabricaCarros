@@ -1,10 +1,22 @@
 package controller;
 
-import model.*;
 
-public class ControllerVeiculo extends ModelVeiculo {
+import view.ViewVeiculo;
 
-    public ControllerVeiculo(ModelCor cor, ModelFabricanteCarro fabricanteCarro, ModelFabricanteMotos fabricanteMotos, ModelKm km, ModelModeloCarro modeloCarro, ModelModeloMotos modeloMotos, ModelTipoDeMotor tipoDeMotor, ModelTipoDeVeiculo tipoDeVeiculo) {
-        super(cor, fabricanteCarro, fabricanteMotos, km, modeloCarro, modeloMotos, tipoDeMotor, tipoDeVeiculo);
+import java.util.ArrayList;
+import java.util.List;
+
+public class ControllerVeiculo <T extends ViewVeiculo> {
+    private List <T> veiculos;
+
+
+    public ControllerVeiculo() {
+        if (veiculos == null) {
+            veiculos = new ArrayList<>();
+        }
     }
+
+
+
+
 }

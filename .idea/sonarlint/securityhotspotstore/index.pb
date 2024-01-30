@@ -25,11 +25,9 @@ S
 #src/src/model/ModelModeloCarro.java,5\c\5c7ad8577d7653e869c48a8547da85a290f02be7
 A
 src/src/Menu.java,d\8\d81bbcaf389d3fbbd9c2c5ba8e1c44bb21d0e050
-H
-src/src/view/Client.java,0\b\0b993ec1aea9e3782ea66d71a5282fd51b406c71
-L
-src/src/model/ClientePF.java,5\5\55c130b18b85fa4a68a607cf411f61c330d05437
 Q
 !src/src/model/ModelClientePF.java,a\7\a701a317084aceda7152fe2c984736e1f8ce145e
 Q
 !src/src/model/ModelClientePJ.java,0\c\0cd5bd8c4197eb2c24dd6821555a859f955b668d
+L
+src/src/view/ViewClient.java,b\c\bc7ace8b40245261882bfd4b47f3d2fde452d3e2

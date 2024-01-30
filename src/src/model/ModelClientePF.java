@@ -1,7 +1,5 @@
 package model;
 
-import view.Client;
-
 import java.util.Objects;
 
 public class ModelClientePF extends ModelCliente {
