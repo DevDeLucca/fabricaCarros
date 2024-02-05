@@ -31,3 +31,5 @@ L
 src/src/view/ViewClient.java,b\c\bc7ace8b40245261882bfd4b47f3d2fde452d3e2
 L
 src/src/model/CMVeiculo.java,0\8\083fb7483497c98f7a5394cf333433e34c506831
+Q
+!src/src/util/ConsoleUIHelper.java,9\4\946b13cef3bf1dbacc6045aafeaf8395d59fd5c0

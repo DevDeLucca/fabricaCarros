@@ -1,6 +1,8 @@
 package controller;
 
+import model.ModelCliente;
 import model.ModelClientePF;
+import model.ModelClientePJ;
 import view.ViewClient;
 
 import java.util.ArrayList;
@@ -11,15 +13,13 @@ public class ControllerCliente<T extends ViewClient> {
     private List<T> clients;
 
     public ControllerCliente () {
-        if(clients == null) {
-            clients = new ArrayList<>();
-        }
+        clients = new ArrayList<>();
     }
-    public String adicionarCliente(T cliente) {
+    public String adicionarCliente(ModelCliente cliente) {
         if(!verificaPadrao(cliente)) {
             return "O documento do cliente esta fora do padrão aceitavel.";
         }
-        if(!existe(cliente)) {
+        if(existe(cliente)) {
             clients.add(cliente);
             return "Cliente cadastrado com sucesso!";
         }
@@ -30,7 +30,7 @@ public class ControllerCliente<T extends ViewClient> {
         return clients.get(index);
     }
 
-    public List<T> listarClients() {
+    public List<T> listarClients(int index) {
         return clients;
     }
 
@@ -38,7 +38,7 @@ public class ControllerCliente<T extends ViewClient> {
         if(!verificaPadrao(cliente)) {
             return "Oops! O documento informado esta fora do padrão aceitavel.";
         }
-        if (!existe(cliente)) {
+        if (existe(cliente)) {
             clients.remove(index);
             clients.add(index, cliente);
             return "Cliente alterado com sucesso!";
@@ -47,7 +47,7 @@ public class ControllerCliente<T extends ViewClient> {
     }
 
     private boolean existe(T clienteNovo) {
-        return clients.stream().anyMatch(cliente -> cliente.equals(clienteNovo));
+        return clients.stream().noneMatch(cliente -> cliente.equals(clienteNovo));
     }
 
 
@@ -56,11 +56,11 @@ public class ControllerCliente<T extends ViewClient> {
 
         if(cliente instanceof ModelClientePF) {
             if (((ModelClientePF) cliente).getCpf().matches("\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d")
-                    || ((ModelClientePF).getCpf().matches("\\d\\d\\d.\\d\\d\\d.\\d\\d\\d-\\d\\d"))
+                    || ((ModelClientePF).getCpf().matches("\\d\\d\\d.\\d\\d\\d.\\d\\d\\d-\\d\\d"));
                 retorno = true;
-        } else if (cliente instanceof ClientePJ) {
-            if (((ClientePJ) cliente).getCnpj().matches("\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d")
-                    || ((ClientePJ) cliente).getCnpj().matches("\\d\\d.\\d\\d\\d.\\d\\d\\d/\\d\\d\\d\\d-\\d\\d"))
+        } else if (cliente instanceof ModelClientePJ) {
+            if (((ModelClientePJ) cliente).getCnpj().matches("\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d")
+                    || ((ModelClientePJ)cliente).getCnpj().matches("\\d\\d.\\d\\d\\d.\\d\\d\\d/\\d\\d\\d\\d-\\d\\d"))
                 retorno = true;
         }
 

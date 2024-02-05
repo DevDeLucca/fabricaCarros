@@ -23,16 +23,4 @@ public class ModelModeloCarro {
     public String getSuvs() {
         return sedans;
     }
-
-    public void setHatchs(String hatchs) {
-        this.hatchs = hatchs;
-    }
-
-    public void setSedans(String sedans) {
-        this.sedans = sedans;
-    }
-
-    public void setSuvs(String suvs) {
-        this.suvs = suvs;
-    }
 }

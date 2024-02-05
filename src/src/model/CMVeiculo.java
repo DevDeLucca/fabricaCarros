@@ -6,7 +6,14 @@ public class CMVeiculo {
     private ModelCor modelCor;
     private ModelKm modelKm;
     private ModelModeloCarro modelModeloCarro;
+    private String placa;
 
+    public CMVeiculo(String placa) {
+        this.placa = placa;
+    }
+    public String getPlaca() { return placa; }
+
+    public void setPlaca(String placa) { this.placa = placa; }
 
     public ModelFabricanteCarro getFabricanteCarro() {
         return fabricanteCarro;
@@ -36,6 +43,7 @@ public class CMVeiculo {
         return modelModeloCarro;
     }
 
+
     @Override
     public String toString() {
         return "VIECULO  = " + fabricanteCarro.getFord().toUpperCase()
@@ -55,7 +63,8 @@ public class CMVeiculo {
                 + modelModeloCarro.getHatchs().toUpperCase()
                 + " | KM = " + modelKm.getNovo().toUpperCase()
                 + modelKm.getSeminovo().toUpperCase()
-                + modelKm.getUsado().toUpperCase();
+                + modelKm.getUsado().toUpperCase()
+                + " | PLACA = " + placa.toUpperCase();
     }
 
 }

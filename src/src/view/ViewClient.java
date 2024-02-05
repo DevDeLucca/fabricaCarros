@@ -1,10 +1,19 @@
 package view;
 
 import controller.ControllerCliente;
+import model.ModelCliente;
+import model.ModelClientePF;
+import model.ModelClientePJ;
+import util.ConsoleUIHelper;
+
+
+import java.util.List;
+import java.util.Scanner;
 
 public class ViewClient {
 
     private static ControllerCliente controller;
+    private ModelCliente cliente;
 
     public ViewClient() {
         if(controller == null) {
@@ -13,15 +22,15 @@ public class ViewClient {
     }
 
     public void adicionarCliente() {
-        Cliente cliente = getCliente();
+        ModelCliente cliente = getCliente();
         System.out.println("\n" + controller.adicionarCliente(cliente));
 
     }
 
     public void listarClientes() {
-        List<? extends Cliente> clientes = controller.listarClientes();
+        List<? extends ModelCliente> clientes = controller.listarClientes();
 
-        if(clientes.size() != 0) {
+        if(!clientes.isEmpty()) {
             for (int i = 0; i < clientes.size(); i++) {
                 System.out.printf("%d - %s%n", i, clientes.get(i).getNome());
             }
@@ -31,7 +40,7 @@ public class ViewClient {
     }
 
     public void editarCliente() {
-        List<? extends Cliente> clientes = controller.listarClientes();
+        List<? extends ModelCliente> clientes = controller.listarClientes();
 
         System.out.println("Informe o index do cliente que deseja alterar:");
         this.listarClientes();
@@ -39,10 +48,10 @@ public class ViewClient {
         Scanner sc = new Scanner(System.in);
         int index = sc.nextInt();
 
-        Cliente clienteEditado;
+        ModelCliente clienteEditado;
         clienteEditado = getCliente();
 
-        Cliente cliente = controller.listarCliente(index);
+        ModelCliente cliente = (ModelCliente) controller.listarClients(index);
         boolean confirma = ConsoleUIHelper.askConfirm("Realmente deseja alterar as informações do contato '" + cliente.getNome() + "'?"
                 , "Sim"
                 , "Não");
@@ -52,8 +61,8 @@ public class ViewClient {
         }
     }
 
-    public Cliente getCliente() {
-        Cliente cliente;
+    public ModelCliente getCliente() {
+        ModelClientePF cliente;
 
         int tipoCliente = ConsoleUIHelper.askChooseOption("Escolha o tipo do cliente"
                 , "Cliente pessoa física", "Cliente pessoa jurídica");
@@ -63,11 +72,11 @@ public class ViewClient {
         if (tipoCliente == 0) {
             String cpf = ConsoleUIHelper.askNoEmptyInput("Informe o CPF do cliente (somente números): ", 0);
 
-            cliente = new ClientePF(nome, cpf);
+            cliente = new ModelClientePF(nome, cpf);
         } else {
             String cnpj = ConsoleUIHelper.askNoEmptyInput("Informe o CNPJ do cliente (somente números): ", 0);
 
-            cliente = new ClientePJ(nome, cnpj);
+            cliente = new ModelClientePJ(nome, cnpj);
         }
 
         return cliente;

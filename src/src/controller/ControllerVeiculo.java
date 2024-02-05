@@ -25,9 +25,9 @@ public class ControllerVeiculo <T extends ViewVeiculo> {
         return veiculos;
     }
 
-    public List<T> pesquisarVeiculo(String modelo) {
-        List<T> veiculosEncontrados = new ArrayList<>();
-        var veiculos = listarVeiculos();
+    public List<CMVeiculo> pesquisarVeiculo(String modelo) {
+        List<CMVeiculo> veiculosEncontrados = new ArrayList<>();
+        List<? extends CMVeiculo> veiculos = listarVeiculos();
         for (int i = 0; i < veiculos.size(); i ++) {
             if (veiculos.get(i).getModelModeloCarro().getHatchs().contains(modelo)||veiculos.get(i)
                     .getModelModeloCarro().getSedans().contains(modelo)||veiculos.get(i).getModelModeloCarro()
@@ -39,5 +39,14 @@ public class ControllerVeiculo <T extends ViewVeiculo> {
             }
         }
         return veiculosEncontrados;
+    }
+
+    public CMVeiculo veiculoExistente(String placa) {
+        for (CMVeiculo veiculoExistente: veiculos) {
+            if (placa.equals(veiculoExistente.getPlaca())) {
+                return veiculoExistente;
+            }
+        }
+        return null;
     }
 }

@@ -1,12 +1,20 @@
 
 D
-java:S3010"'Remove this assignment of "controller".(ûÛûÿ8İ¼²±Õ1
-L	java:S106"+Replace this use of System.out by a logger.(Èãä“ûÿÿÿÿ8á¼²±Õ1
-L	java:S106"+Replace this use of System.out by a logger.(¼¹°üÿÿÿÿ8ğ¼²±Õ1
-L	java:S106"+Replace this use of System.out by a logger.(™Ÿïİúÿÿÿÿ8ò¼²±Õ1
+java:S3010"'Remove this assignment of "controller".(ûÛûÿ8†²­Ì×1
+]
+java:S1117";Rename "cliente" which hides the field declared at line 16.(ŸÙÔ’şÿÿÿÿ8«²­Ì×1
+L	java:S106"+Replace this use of System.out by a logger.(Èãä“ûÿÿÿÿ8‹²­Ì×1
+L	java:S106#"+Replace this use of System.out by a logger.(¼¹°üÿÿÿÿ8²­Ì×1
+L	java:S106&"+Replace this use of System.out by a logger.(™Ÿïİúÿÿÿÿ8²­Ì×1
 ^
-java:S1854""<Remove this useless assignment to local variable "clientes".(ĞËÓßıÿÿÿÿ8ò¼²±Õ1
+java:S1854+"<Remove this useless assignment to local variable "clientes".(”Àä¥ÿÿÿÿÿ8’²­Ì×1
 O
-java:S1481""-Remove this unused "clientes" local variable.(ĞËÓßıÿÿÿÿ8õ¼²±Õ1
-G	java:S106$"+Replace this use of System.out by a logger.(Ş’ÚÄ8÷¼²±Õ1
-G	java:S1063"+Replace this use of System.out by a logger.(¶¡ì¾8ı¼²±Õ1
+java:S1481+"-Remove this unused "clientes" local variable.(”Àä¥ÿÿÿÿÿ8”²­Ì×1
+G	java:S106-"+Replace this use of System.out by a logger.(Ş’ÚÄ8”²­Ì×1
+X
+java:S11176";Rename "cliente" which hides the field declared at line 16.(¡İ¿8®²­Ì×1
+G	java:S106<"+Replace this use of System.out by a logger.(¶¡ì¾8ª¤¸Ì×1
+X
+java:S1117A";Rename "cliente" which hides the field declared at line 16.(‚«—8«¤¸Ì×1
+H
+java:S1068"+Remove this unused "cliente" private field.(³Õïí8á‹¯Ì×1
